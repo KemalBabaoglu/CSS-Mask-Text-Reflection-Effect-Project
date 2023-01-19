@@ -1,0 +1,140 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{height: 100vh;
+    background-image: url("back.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+.mask-text{
+
+    background-image: url("eyes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 18rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+    letter-spacing: -12px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 40px, -15px -15px 40px;
+   
+    filter: brightness(0.9);
+    
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1.5s;
+}
+
+.text{
+    font-size: 6rem;
+    color: #00efff;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0 0 20px;
+}
+
+.text::before{
+    content: "Kalbin Aynasıdır";
+    position: absolute;
+    transform: rotateX(180deg);
+    transform-origin: bottom;
+    line-height: 0.85;
+    background: linear-gradient(0deg, rgba(0,239,255,1) 0%, rgba(0,255,255,0) 70%);
+
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+
+
+
+@media screen and (max-width:800px){
+    .mask-text{
+        font-size: 15rem;
+        letter-spacing: -10px;
+    }
+    .text{
+        font-size: 5rem;
+        
+    }
+}
+
+@media screen and (max-width:680px){
+    .mask-text{
+        font-size: 12rem;
+        letter-spacing: -8px;
+    }
+    .text{
+        font-size: 4rem;
+        
+    }
+}
+
+@media screen and (max-width:530px){
+    .mask-text{
+        font-size: 10rem;
+        letter-spacing: -6px;
+    }
+    .text{
+        font-size: 3.3rem;
+        
+    }
+}
+
+@media screen and (max-width:440px){
+    .mask-text{
+        font-size: 8rem;
+        letter-spacing: -6px;
+    }
+    .text{
+        font-size: 2.7rem;
+        
+    }
+}
+
+@media screen and (max-width:360px){
+    .mask-text{
+        font-size: 7rem;
+        letter-spacing: -5px;
+    }
+    .text{
+        font-size: 2.3rem;
+        
+    }
+}
+
+
+
+@media screen and (max-width:320px){
+    .mask-text{
+        font-size: 6rem;
+        letter-spacing: -5px;
+    }
+    .text{
+        font-size: 2rem;
+        
+    }
+}
+
+@media screen and (max-width:280px){
+    .mask-text{
+        font-size: 5rem;
+        letter-spacing: -5px;
+    }
+    .text{
+        font-size: 1.7rem;
+        
+    }
+}
